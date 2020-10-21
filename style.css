@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 1px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -17,7 +17,6 @@
     width: 253px;
 }
 
-
 .menu a {
     display: flex;
     justify-content: space-around;
@@ -28,26 +27,22 @@
 }
 
 .menu a:hover {
-    border-top: 2px solid #FF0000;
-    border-bottom: 2px solid #FF0000;
+    border-top: 2px solid #ff0036;
+    border-bottom: 2px solid #ff0036;
 }
 
 .background_woman {
     height: 658px;
-    background-image: url(./img/slideshow/photodune-3598715-woman-in-red-m.png);
-    
+    background-image: url(./img/slideshow/bg.png); 
     background-position-y: -156px;
     background-repeat: no-repeat;
 }
 
-
-
-.slideshow .header_text {
+.slideshow .title {
     display: flex;
     padding-top: 180px;
     white-space: pre;
     justify-content: center;
-
 }
 
 .white_word {
@@ -59,7 +54,7 @@
 
 .red_word {
     font-size: 30px;
-    color: #FF0000;
+    color: #ff0036;
     font-weight: 700;
     font-family: "Raleway";
 }
@@ -72,6 +67,34 @@
     font-weight: 400;
     font-family: "Lato";
     text-align: center;
+}
+
+.arrows {
+    position: relative;
+}
+
+.arrows div{
+    position: absolute;
+    border: solid  #a4a4a4;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+}
+
+.arrows .right {
+    right: 36px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrows .left {
+    left: 36px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrows > div:hover{
+    border-color: #ff0036;
 }
 
 header .button {
@@ -111,7 +134,6 @@ header .button .button_free_psd {
     margin-left: 64px;
 }
 
-header .button .button_features:hover,
-header .button .button_free_psd:hover {
-    background-color: #ff0036;;
+header .button > div:hover {
+    background-color: #ff0036;
 }
