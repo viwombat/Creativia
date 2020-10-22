@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+header {
+    height: 373px;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -38,11 +42,14 @@
     background-repeat: no-repeat;
 }
 
-.slideshow .title {
+ .title {
     display: flex;
-    padding-top: 180px;
     white-space: pre;
     justify-content: center;
+}
+
+.slideshow .title {
+    margin-top: 180px;
 }
 
 .white_word {
@@ -59,14 +66,25 @@
     font-family: "Raleway";
 }
 
-.slideshow .text {
-    padding-top: 50px;
+.black_word {
+    font-size: 30px;
+    color: #262626;
+    font-weight: 700;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+.slideshow .description {
+    margin-top: 50px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.description {
     font-size: 16px;
     line-height: 22px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Lato";
-    text-align: center;
+    font-family: "Lato", Sans-serif;
 }
 
 .arrows {
@@ -76,7 +94,8 @@
 .arrows div{
     position: absolute;
     border: solid  #a4a4a4;
-    border-width: 0 3px 3px 0;
+    border-width: 0 4px 4px 0;
+    border-radius: 20%;
     display: inline-block;
     padding: 7px;
 }
@@ -134,6 +153,137 @@ header .button .button_free_psd {
     margin-left: 64px;
 }
 
-header .button > div:hover {
+header .button > a:hover {
     background-color: #ff0036;
+}
+
+.about {
+    height: 1100px;
+}
+
+.about .title {
+    margin-top: 100px;
+}
+
+.about .description {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    color: #505050;
+    font-weight: 700;
+}
+
+.about .description .colortext {
+    color: #ff0036;
+}
+
+.about .more_description {
+    width: 570px;
+    height: 81px;
+    margin-top: 100px;
+    margin-left: 115px;
+    
+    font-size: 16px;
+    line-height: 22px;
+    color: #505050;
+    font-weight: 400;
+    font-family: "Lato", Sans-serif;
+    text-align: justify;
+}
+
+.left_image {
+    position: absolute;
+    right: 100px;
+    top: 950px;
+}
+
+.toggle {
+    margin-left: 115px;
+    margin-top: 50px;
+}
+
+.toggle > div {
+    border: 1px solid #e7e7e7; 
+}
+
+.toggle div:not(:first-child) {
+    height: 45px;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+.toggle div:first-child {
+    color: #ff0036;
+    height: 45px;
+}
+
+.toggle div:not(:nth-child(2)) {
+    display: flex;
+    width: 570px;
+    
+    background-color: #f7f7f7;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Raleway";
+}
+
+.toggle div:nth-child(2) {
+    width: 570px;
+    height: 80px;
+    padding: 15px;
+
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #505050;
+    font-weight: 400;
+    font-family: "Lato", Sans-serif;
+    text-align: justify;
+}
+
+.toggle img {
+    border-right: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+    padding: 12px 15px;
+}
+
+.toggle span {
+    margin-top: 10px;
+    margin-left: 30px;
+} 
+
+.about .separator {
+    text-align: center;
+    height: 20px; 
+    padding-top: 100px;
+}
+
+.scrollbar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.scrollbar img {
+    background-image: url(./img/about/Shape_notactive.png);
+    height: 77px;
+    width: 88px;
+}
+
+.scrollbar p:nth-of-type(1) {
+    padding: 36px 0;
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+    font-family: "Raleway";
+}
+
+.scrollbar p:nth-of-type(2) {
+    width: 270px;
+    height: 59px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #505050;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
 }
