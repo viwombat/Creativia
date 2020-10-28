@@ -31,15 +31,17 @@ header {
 }
 
 .menu a:hover {
+    cursor: pointer;
     border-top: 2px solid #ff0036;
     border-bottom: 2px solid #ff0036;
 }
 
-.background_woman {
+.background-woman {
     height: 658px;
     background-image: url(./img/slideshow/bg.png); 
     background-position-y: -156px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
  .title {
@@ -52,21 +54,21 @@ header {
     margin-top: 180px;
 }
 
-.white_word {
+.white-word {
     font-size: 30px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Raleway";
 }
 
-.red_word {
+.red-word {
     font-size: 30px;
     color: #ff0036;
     font-weight: 700;
     font-family: "Raleway";
 }
 
-.black_word {
+.black-word {
     font-size: 30px;
     color: #262626;
     font-weight: 700;
@@ -74,14 +76,14 @@ header {
     text-align: center;
 }
 
-.slideshow .description {
+.slideshow .text {
     margin-top: 50px;
     color: #ffffff;
     text-align: center;
     font-weight: 400;
 }
 
-.description {
+.slideshow.description {
     font-size: 16px;
     line-height: 22px;
     font-family: "Lato", Sans-serif;
@@ -113,6 +115,7 @@ header {
 }
 
 .arrows > div:hover{
+    cursor: pointer;
     border-color: #ff0036;
 }
 
@@ -123,7 +126,7 @@ header .button {
     margin-top: 67px;
 }
 
-header .button .button_features {
+ .button-features {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +139,7 @@ header .button .button_features {
     background-color: #131313;
 }
 
-header .button .button_free_psd {
+.button-free-psd {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,11 +152,12 @@ header .button .button_free_psd {
     background-color: #131313;
 }
 
-.button_features + .button_free_psd {
+.button-features + .button-free-psd {
     margin-left: 64px;
 }
 
 header .button > a:hover {
+    cursor: pointer;
     background-color: #ff0036;
 }
 
@@ -165,19 +169,27 @@ header .button > a:hover {
     margin-top: 100px;
 }
 
-.about .description {
-    position: relative;
+.description {
     text-align: center;
     margin-top: 50px;
     color: #505050;
     font-weight: 700;
 }
 
-.about .description .colortext {
+.description .colortext {
     color: #ff0036;
 }
 
-.about .more_description {
+.about .wrapper {
+    display: flex;
+    width: 1170px;
+}
+
+.about .wrapper article {
+    flex-direction: column;
+}
+
+.about .more-description {
     width: 570px;
     height: 81px;
     margin-top: 100px;
@@ -191,10 +203,9 @@ header .button > a:hover {
     text-align: justify;
 }
 
-.left_image {
-    position: absolute;
-    right: 100px;
-    top: 950px;
+.left-image {
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .toggle {
@@ -253,8 +264,7 @@ header .button > a:hover {
 
 .about .separator {
     text-align: center;
-    height: 20px; 
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .scrollbar {
@@ -286,4 +296,102 @@ header .button > a:hover {
     color: #505050;
     font-weight: 400;
     font-family: "Lato", sans-serif;
+}
+
+.portfolio {
+    position: relative;
+    height: 1077px;
+    background-color: #262626;
+}
+
+.portfolio .title {
+    padding-top: 100px;
+}
+
+.portfolio .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #a4a4a4;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+
+.portfolio a:hover {
+    cursor: pointer;
+    color: #ff0036;
+}
+
+.portfolio .gallery {
+    margin-top: 99px;
+}
+
+.portfolio img {
+    float: left;
+}
+
+.portfolio .gallery p {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .separator {
+    position: absolute;
+    bottom: -10px; 
+}
+
+.our-product-features {
+    height: 900px;
+}
+
+.our-product-features .title {
+    margin-top: 100px;
+}
+
+.our-product-features .product-description {
+    display: flex;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 1170px;
+}
+
+.our-product-features .product-description li {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    border: 1px solid #e7e7e7;
+    text-align: justify;
+}
+
+.our-product-features .product-description p {
+    cursor: pointer;
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-family: "Raleway";
+}
+
+.our-product-features .product-description .wrapper {
+    position: relative;
+}
+
+.button-free-psd:hover {
+    cursor: pointer;
+    background-color: #ff0036;
+}
+
+.our-product-features .product-description li:hover {
+    background-color: #ff0036;
+}
+
+.our-product-features .product-description p:hover {
+    color: #e7e7e7;
 }
