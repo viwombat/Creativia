@@ -126,7 +126,7 @@ header .button {
     margin-top: 67px;
 }
 
- .button-features {
+.button-features {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +149,9 @@ header .button {
     color: #ffffff;
     font-weight: 500;
     font-family: "Raleway";
+}
+
+header .button-free-psd {
     background-color: #131313;
 }
 
@@ -172,6 +175,7 @@ header .button > a:hover {
 .description {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     color: #505050;
     font-weight: 700;
 }
@@ -180,20 +184,18 @@ header .button > a:hover {
     color: #ff0036;
 }
 
-.about .wrapper {
+.about div.wrapper {
     display: flex;
+    flex-direction: row;
     width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
-.about .wrapper article {
-    flex-direction: column;
-}
-
-.about .more-description {
+.about .toggle .more-description {
     width: 570px;
     height: 81px;
-    margin-top: 100px;
-    margin-left: 115px;
+    margin-bottom: 50px;
     
     font-size: 16px;
     line-height: 22px;
@@ -203,32 +205,27 @@ header .button > a:hover {
     text-align: justify;
 }
 
-.left-image {
-    justify-content: flex-end;
-    margin-left: auto;
+.about .left-image {
+    align-items: center;
+    margin: auto 0;
 }
 
-.toggle {
-    margin-left: 115px;
-    margin-top: 50px;
-}
-
-.toggle > div {
+.about .toggle > div {
     border: 1px solid #e7e7e7; 
 }
 
-.toggle div:not(:first-child) {
+.about .toggle div:not(:nth-of-type(1)) {
     height: 45px;
     color: #262626;
     margin-bottom: 8px;
 }
 
-.toggle div:first-child {
+.about .toggle div:nth-of-type(1) {
     color: #ff0036;
     height: 45px;
 }
 
-.toggle div:not(:nth-child(2)) {
+.about .toggle div:not(:nth-of-type(2)) {
     display: flex;
     width: 570px;
     
@@ -236,9 +233,10 @@ header .button > a:hover {
     font-size: 20px;
     font-weight: 500;
     font-family: "Raleway";
+    cursor: pointer;
 }
 
-.toggle div:nth-child(2) {
+.about .toggle div:nth-of-type(2) {
     width: 570px;
     height: 80px;
     padding: 15px;
@@ -251,13 +249,13 @@ header .button > a:hover {
     text-align: justify;
 }
 
-.toggle img {
+.about .toggle img {
     border-right: 1px solid #e7e7e7;
     background-color: #f7f7f7;
     padding: 12px 15px;
 }
 
-.toggle span {
+.about .toggle span {
     margin-top: 10px;
     margin-left: 30px;
 } 
@@ -271,13 +269,15 @@ header .button > a:hover {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 100px;
+    width: 1170px;
+    margin: 100px auto;
 }
 
 .scrollbar img {
     background-image: url(./img/about/Shape_notactive.png);
     height: 77px;
     width: 88px;
+    cursor: pointer;
 }
 
 .scrollbar p:nth-of-type(1) {
@@ -299,7 +299,6 @@ header .button > a:hover {
 }
 
 .portfolio {
-    position: relative;
     height: 1077px;
     background-color: #262626;
 }
@@ -334,14 +333,15 @@ header .button > a:hover {
     float: left;
 }
 
-.portfolio .gallery p {
+.portfolio .gallery div {
     display: flex;
     justify-content: center;
 }
 
 .portfolio .separator {
-    position: absolute;
-    bottom: -10px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
 }
 
 .our-product-features {
@@ -367,31 +367,36 @@ header .button > a:hover {
     width: 370px;
     border: 1px solid #e7e7e7;
     text-align: justify;
-}
 
-.our-product-features .product-description p {
     cursor: pointer;
     font-size: 20px;
     color: #262626;
     font-weight: 500;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: "Raleway";
 }
 
-.our-product-features .product-description .wrapper {
-    position: relative;
-}
-
-.button-free-psd:hover {
+.our-product-features .button-free-psd:hover {
     cursor: pointer;
     background-color: #ff0036;
 }
 
 .our-product-features .product-description li:hover {
     background-color: #ff0036;
+    color: #e7e7e7;
 }
 
-.our-product-features .product-description p:hover {
-    color: #e7e7e7;
+
+.our-product-features .product-description .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-product-features .button-free-psd {
+    position: absolute;
+    bottom: 73px;
+    background-color:#393939;
 }
