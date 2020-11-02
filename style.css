@@ -338,10 +338,10 @@ header .button > a:hover {
     justify-content: center;
 }
 
-.portfolio .separator {
+.separator {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
+    margin-top: -10px;
 }
 
 .our-product-features {
@@ -375,6 +375,19 @@ header .button > a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: "Raleway";
+}
+
+.product-description-left-list li {
+    justify-content: flex-end;
+}
+
+.product-description-right-list li {
+    justify-content: flex-start;
+}
+
+.product-description img {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .our-product-features .button-free-psd:hover {
