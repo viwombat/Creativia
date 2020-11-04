@@ -83,7 +83,7 @@ header {
     font-weight: 400;
 }
 
-.slideshow.description {
+.slideshow .description {
     font-size: 16px;
     line-height: 22px;
     font-family: "Lato", Sans-serif;
@@ -97,7 +97,6 @@ header {
     position: absolute;
     border: solid  #a4a4a4;
     border-width: 0 4px 4px 0;
-    border-radius: 20%;
     display: inline-block;
     padding: 7px;
 }
@@ -176,8 +175,12 @@ header .button > a:hover {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #505050;
     font-weight: 700;
+    font-family: "Lato", Sans-serif;
+}
+
+.about .description {
+    color: #505050;
 }
 
 .description .colortext {
@@ -265,7 +268,7 @@ header .button > a:hover {
     margin-top: 100px;
 }
 
-.scrollbar {
+.advantages {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -273,14 +276,14 @@ header .button > a:hover {
     margin: 100px auto;
 }
 
-.scrollbar img {
+.advantages img {
     background-image: url(./img/about/Shape_notactive.png);
     height: 77px;
     width: 88px;
     cursor: pointer;
 }
 
-.scrollbar p:nth-of-type(1) {
+.advantages p:nth-of-type(1) {
     padding: 36px 0;
     font-size: 20px;
     color: #262626;
@@ -288,7 +291,7 @@ header .button > a:hover {
     font-family: "Raleway";
 }
 
-.scrollbar p:nth-of-type(2) {
+.advantages p:nth-of-type(2) {
     width: 270px;
     height: 59px;
     font-size: 16px;
@@ -352,13 +355,20 @@ header .button > a:hover {
     margin-top: 100px;
 }
 
+.our-product-features .description {
+    color: #505050;
+}
+
 .our-product-features .product-description {
     display: flex;
-    
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     width: 1170px;
+}
+
+.our-product-features .product-description ul {
+    margin-top: 100px;
 }
 
 .our-product-features .product-description li {
@@ -400,7 +410,6 @@ header .button > a:hover {
     color: #e7e7e7;
 }
 
-
 .our-product-features .product-description .wrapper {
     position: relative;
     display: flex;
@@ -412,4 +421,224 @@ header .button > a:hover {
     position: absolute;
     bottom: 73px;
     background-color:#393939;
+}
+
+.our-clients {
+    background-image: url(./img/our\ clients/bg.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 653px;
+}
+
+.client {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.our-clients .companies img {
+    width: 270px;
+    height: 116px;
+    margin: 15px 15px;
+}
+
+.our-clients .companies {
+    display: flex;
+    width: 600px;
+}
+
+.our-clients .title {
+    padding-top: 95px;
+}
+
+.our-clients .description {
+    color:#a4a4a4;
+}
+
+.our-clients .client .description {
+    width: 538px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #a4a4a4;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.our-clients .person div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+
+.our-clients .person div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 35px;
+}
+
+.our-clients .person p {
+    margin-top: 10px;
+    color: #ff0036;
+    font-weight: 700;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 16px;
+}
+
+.our-clients .client p:first-child {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+.our-teamwork {
+    height: 1250px;
+}
+
+.our-teamwork .title {
+    margin-top: 90px;
+}
+
+.our-teamwork .description {
+    color:#505050;
+}
+
+.our-teamwork .team {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.our-teamwork .team .worker .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 270px;
+    height: 240px;
+    background-image: url(./img/our\ teamwork/de.png);
+}
+
+.our-teamwork .team .worker .social-media div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 155px;
+    opacity: 0;
+}
+
+.our-teamwork .team .worker .social-media div:hover {
+    opacity: 1;
+}
+
+.our-teamwork .team .srour .social-media {
+    background-image: url(./img/our\ teamwork/srour.png);
+}
+
+.our-teamwork .team .doe .social-media {
+    background-image: url(./img/our\ teamwork/doe.png);
+}
+
+.our-teamwork .team .de .social-media {
+    background-image: url(./img/our\ teamwork/de.png);
+}
+
+.our-teamwork .team .worker div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 270px;
+    height: 122px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+}
+
+.our-teamwork .team .worker p:nth-of-type(1) {
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+.our-teamwork .team .worker p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 22px;
+    color: #505050;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+
+.our-teamwork .team .worker .social-media:hover {
+    background-image: url(./img/our\ teamwork/img\ hover.png);
+}
+
+.our-teamwork .team .worker p:nth-of-type(1):hover {
+    color: #ff0036;
+    cursor: pointer;
+}
+
+.our-teamwork .separator {
+    margin-top: 100px;
+}
+
+.diagrams {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 750px;
+}
+
+.diagram div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    width: 145px; 
+	height: 145px;
+
+	font-size: 38px;
+	line-height: 100px;
+	text-align: center;
+
+	border: 3px solid #ff0036;
+    border-right: 3px solid #ECF5E4;
+	border-radius: 50%;
+}
+
+.diagram p:nth-of-type(1) {
+    font-size: 40px;
+    line-height: 95px;
+    color: #ff0036;
+    font-weight: 300;
+    font-family: "Lato";
+} 
+
+.diagram span {
+    color: #262626;
+}
+
+.diagrams p:nth-child(2) {
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+.diagrams p:nth-child(3) {
+    width: 155px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #505050;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
 }
